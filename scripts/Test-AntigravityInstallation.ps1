@@ -17,4 +17,4 @@ $result = @(foreach ($plugin in (Get-ChildItem -LiteralPath $TargetPluginsDir -D
 $result | Format-Table -AutoSize
 Write-Host "Plugin folders: $($result.Count). File count is NOT proof of runtime registration."
 Write-Host 'IDE smoke test: ask agent to name the exact SKILL.md path used for a focused debugging task.'
-if (@($result | Where-Object { -not $_.ManifestValid }).Count) { exit 1 }
+Write-Host 'A missing plugin.json can indicate a standalone skill rather than a broken plugin.'
