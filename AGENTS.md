@@ -65,3 +65,7 @@
 ## 2. Tiêu chuẩn phản hồi
 - Giữ phong cách ngắn gọn, súc tích, giải quyết thẳng vào vấn đề.
 - Ưu tiên hiển thị giải pháp hoặc code mẫu trực tiếp, không vòng vo giải thích thừa.
+
+
+## Execution modes (Solo / Team)
+Before coding, read [rules/DUAL-MODE.md](rules/DUAL-MODE.md). Default to Solo for bounded changes, choose Team for risky or cross-module development. Require human approval for destructive or production changes. Never claim parallel subagents or skill registration without runtime verification.
